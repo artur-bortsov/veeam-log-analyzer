@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-labelledby="title desc">
+  <title id="title">Veeam Replication Log Analyzer thumbnail</title>
+  <desc id="desc">A thumbnail showing Veeam replication task logs flowing through a parser into a cumulative CSV dataset for analytics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1318" />
+      <stop offset="100%" stop-color="#0a3b27" />
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="36" />
+    </filter>
+  </defs>
+  <rect width="1200" height="627" fill="url(#bg)" />
+  <ellipse cx="160" cy="120" rx="260" ry="180" fill="#4cd97b" fill-opacity="0.26" filter="url(#blur)" />
+  <ellipse cx="960" cy="50" rx="190" ry="130" fill="#4dcde0" fill-opacity="0.16" filter="url(#blur)" />
+  <ellipse cx="1010" cy="540" rx="270" ry="210" fill="#6ff3b3" fill-opacity="0.16" filter="url(#blur)" />
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <line x1="640" y1="74" x2="512" y2="560" />
+    <line x1="694" y1="74" x2="566" y2="560" />
+    <line x1="748" y1="74" x2="620" y2="560" />
+    <line x1="802" y1="74" x2="674" y2="560" />
+    <line x1="856" y1="74" x2="728" y2="560" />
+    <line x1="910" y1="74" x2="782" y2="560" />
+    <line x1="964" y1="74" x2="836" y2="560" />
+    <line x1="1018" y1="74" x2="890" y2="560" />
+    <line x1="1072" y1="74" x2="944" y2="560" />
+    <line x1="1126" y1="74" x2="998" y2="560" />
+  </g>
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <line x1="604" y1="120" x2="1150" y2="120" />
+    <line x1="604" y1="178" x2="1150" y2="178" />
+    <line x1="604" y1="236" x2="1150" y2="236" />
+    <line x1="604" y1="294" x2="1150" y2="294" />
+    <line x1="604" y1="352" x2="1150" y2="352" />
+    <line x1="604" y1="410" x2="1150" y2="410" />
+    <line x1="604" y1="468" x2="1150" y2="468" />
+  </g>
+  <g font-family="Inter, Arial, Helvetica, sans-serif">
+    <rect x="72" y="68" width="228" height="40" rx="20" fill="#0a1715" fill-opacity="0.56" stroke="#ffffff" stroke-opacity="0.28" />
+    <text x="186" y="94" text-anchor="middle" fill="#c3dcd1" font-size="19" font-weight="700">Veeam → Analytics</text>
+    <text x="72" y="192" fill="#f4f8f6" font-size="74" font-weight="800">Veeam</text>
+    <text x="72" y="274" fill="#f4f8f6" font-size="74" font-weight="800">Log</text>
+    <text x="72" y="356" fill="#f4f8f6" font-size="74" font-weight="800">Analyzer</text>
+    <rect x="72" y="388" width="160" height="8" rx="4" fill="#4cd97b" />
+    <text x="72" y="450" fill="#f4f8f6" font-size="28" font-weight="600">Turn replication logs</text>
+    <text x="72" y="484" fill="#f4f8f6" font-size="28" font-weight="600">into metrics you can chart.</text>
+    <text x="72" y="532" fill="#c3dcd1" font-size="20">Parses Veeam replication sessions into a cumulative CSV.</text>
+    <rect x="72" y="566" width="468" height="42" rx="20" fill="#0a1715" fill-opacity="0.56" stroke="#ffffff" stroke-opacity="0.28" />
+    <text x="306" y="594" text-anchor="middle" fill="#f4f8f6" font-size="17" font-weight="700">Key fields: timing • storage • proxy • bottleneck</text>
+    <rect x="610" y="92" width="540" height="440" rx="32" fill="#081210" fill-opacity="0.84" stroke="#5ab284" stroke-opacity="0.38" />
+    <text x="646" y="146" fill="#f4f8f6" font-size="28" font-weight="700">How it works</text>
+    <text x="646" y="176" fill="#c3dcd1" font-size="17">Reads Veeam replication task logs, extracts session</text>
+    <text x="646" y="198" fill="#c3dcd1" font-size="17">details, and builds a reporting-ready dataset.</text>
+    <g>
+      <rect x="646" y="225" width="132" height="150" rx="24" fill="#0f1c19" fill-opacity="0.92" stroke="#ffc45c" stroke-opacity="0.74" stroke-width="2" />
+      <rect x="662" y="239" width="100" height="8" rx="4" fill="#ffc45c" />
+      <circle cx="682" cy="257" r="10" fill="#ffc45c" fill-opacity="0.18" stroke="#ffc45c" />
+      <text x="712" y="300" text-anchor="middle" fill="#f4f8f6" font-size="22" font-weight="700">Logs</text>
+      <text x="712" y="334" text-anchor="middle" fill="#c3dcd1" font-size="16">Replication</text>
+      <text x="712" y="356" text-anchor="middle" fill="#c3dcd1" font-size="16">sessions</text>
+    </g>
+    <g>
+      <rect x="814" y="225" width="132" height="150" rx="24" fill="#0f1c19" fill-opacity="0.92" stroke="#4cd97b" stroke-opacity="0.74" stroke-width="2" />
+      <rect x="830" y="239" width="100" height="8" rx="4" fill="#4cd97b" />
+      <circle cx="850" cy="257" r="10" fill="#4cd97b" fill-opacity="0.18" stroke="#4cd97b" />
+      <text x="880" y="300" text-anchor="middle" fill="#f4f8f6" font-size="22" font-weight="700">Parser</text>
+      <text x="880" y="334" text-anchor="middle" fill="#c3dcd1" font-size="16">Times, routes,</text>
+      <text x="880" y="356" text-anchor="middle" fill="#c3dcd1" font-size="16">proxies</text>
+    </g>
+    <g>
+      <rect x="982" y="225" width="132" height="150" rx="24" fill="#0f1c19" fill-opacity="0.92" stroke="#4dcde0" stroke-opacity="0.74" stroke-width="2" />
+      <rect x="998" y="239" width="100" height="8" rx="4" fill="#4dcde0" />
+      <circle cx="1018" cy="257" r="10" fill="#4dcde0" fill-opacity="0.18" stroke="#4dcde0" />
+      <text x="1048" y="294" text-anchor="middle" fill="#f4f8f6" font-size="22" font-weight="700">CSV</text>
+      <text x="1048" y="323" text-anchor="middle" fill="#c3dcd1" font-size="17">Excel</text>
+      <text x="1048" y="341" text-anchor="middle" fill="#c3dcd1" font-size="17">Grafana</text>
+      <text x="1048" y="359" text-anchor="middle" fill="#c3dcd1" font-size="17">+ more</text>
+    </g>
+    <g fill="none" stroke-linecap="round" stroke-width="6">
+      <line x1="778" y1="300" x2="804" y2="300" stroke="#ffc45c" />
+      <polygon points="804,300 790,292 790,308" fill="#ffc45c" stroke="none" />
+      <line x1="946" y1="300" x2="972" y2="300" stroke="#4cd97b" />
+      <polygon points="972,300 958,292 958,308" fill="#4cd97b" stroke="none" />
+    </g>
+    <text x="646" y="430" fill="#c3dcd1" font-size="18">Incremental runs skip known IDs and keep a cumulative CSV</text>
+    <text x="646" y="454" fill="#c3dcd1" font-size="18">ready for dashboards and trend analysis.</text>
+  </g>
+</svg>
