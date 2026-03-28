@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="btitle bdesc">
+  <title id="btitle">Veeam Replication Log Analyzer</title>
+  <desc id="bdesc">PowerShell script that parses Veeam replication task logs into a cumulative CSV database of session metrics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1318"/>
+      <stop offset="100%" stop-color="#0a3b27"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <ellipse cx="160" cy="100" rx="260" ry="160" fill="#4cd97b" fill-opacity="0.26" filter="url(#blur)"/>
+  <ellipse cx="980" cy="40"  rx="190" ry="120" fill="#4dcde0" fill-opacity="0.16" filter="url(#blur)"/>
+  <ellipse cx="1020" cy="440" rx="260" ry="170" fill="#6ff3b3" fill-opacity="0.16" filter="url(#blur)"/>
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <line x1="640"  y1="48" x2="534" y2="458"/>
+    <line x1="694"  y1="48" x2="588" y2="458"/>
+    <line x1="748"  y1="48" x2="642" y2="458"/>
+    <line x1="802"  y1="48" x2="696" y2="458"/>
+    <line x1="856"  y1="48" x2="750" y2="458"/>
+    <line x1="910"  y1="48" x2="804" y2="458"/>
+    <line x1="964"  y1="48" x2="858" y2="458"/>
+    <line x1="1018" y1="48" x2="912" y2="458"/>
+    <line x1="1072" y1="48" x2="966" y2="458"/>
+    <line x1="1126" y1="48" x2="1020" y2="458"/>
+  </g>
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <line x1="600" y1="90"  x2="1150" y2="90"/>
+    <line x1="600" y1="136" x2="1150" y2="136"/>
+    <line x1="600" y1="182" x2="1150" y2="182"/>
+    <line x1="600" y1="228" x2="1150" y2="228"/>
+    <line x1="600" y1="274" x2="1150" y2="274"/>
+    <line x1="600" y1="320" x2="1150" y2="320"/>
+    <line x1="600" y1="366" x2="1150" y2="366"/>
+    <line x1="600" y1="412" x2="1150" y2="412"/>
+    <line x1="600" y1="458" x2="1150" y2="458"/>
+  </g>
+  <g font-family="Inter, Arial, Helvetica, sans-serif">
+    <rect x="72" y="52" width="228" height="36" rx="18" fill="#0a1715" fill-opacity="0.56" stroke="#ffffff" stroke-opacity="0.28"/>
+    <text x="186" y="76" text-anchor="middle" fill="#c3dcd1" font-size="17" font-weight="700">Veeam → Analytics</text>
+    <text x="72" y="158" fill="#f4f8f6" font-size="66" font-weight="800">Veeam</text>
+    <text x="72" y="230" fill="#f4f8f6" font-size="66" font-weight="800">Log</text>
+    <text x="72" y="302" fill="#f4f8f6" font-size="66" font-weight="800">Analyzer</text>
+    <rect x="72" y="320" width="160" height="7" rx="3" fill="#4cd97b"/>
+    <text x="72" y="364" fill="#f4f8f6" font-size="22" font-weight="600">Turn replication logs</text>
+    <text x="72" y="390" fill="#f4f8f6" font-size="22" font-weight="600">into metrics you can chart.</text>
+    <text x="72" y="424" fill="#c3dcd1" font-size="15">PowerShell · incremental parsing · CSV output · Excel / Grafana</text>
+    <rect x="72"  y="448" width="122" height="34" rx="16" fill="#0a1715" fill-opacity="0.56" stroke="#ffffff" stroke-opacity="0.28"/>
+    <text x="133" y="470" text-anchor="middle" fill="#f4f8f6" font-size="14" font-weight="700">PowerShell</text>
+    <rect x="208" y="448" width="132" height="34" rx="16" fill="#0a1715" fill-opacity="0.56" stroke="#ffffff" stroke-opacity="0.28"/>
+    <text x="274" y="470" text-anchor="middle" fill="#f4f8f6" font-size="14" font-weight="700">Incremental</text>
+    <rect x="354" y="448" width="156" height="34" rx="16" fill="#0a1715" fill-opacity="0.56" stroke="#ffffff" stroke-opacity="0.28"/>
+    <text x="432" y="470" text-anchor="middle" fill="#f4f8f6" font-size="14" font-weight="700">Excel · Grafana</text>
+    <!-- Right panel -->
+    <rect x="610" y="72" width="540" height="392" rx="28" fill="#081210" fill-opacity="0.84" stroke="#5ab284" stroke-opacity="0.38"/>
+    <text x="646" y="118" fill="#f4f8f6" font-size="24" font-weight="700">How it works</text>
+    <text x="646" y="145" fill="#c3dcd1" font-size="15">Reads Veeam replication task logs, extracts session</text>
+    <text x="646" y="163" fill="#c3dcd1" font-size="15">details, and builds a reporting-ready dataset.</text>
+    <!-- Card 1: Logs -->
+    <g>
+      <rect x="646" y="186" width="132" height="128" rx="20" fill="#0f1c19" fill-opacity="0.92" stroke="#ffc45c" stroke-opacity="0.74" stroke-width="2"/>
+      <rect x="662" y="200" width="100" height="7" rx="3" fill="#ffc45c"/>
+      <circle cx="682" cy="217" r="9" fill="#ffc45c" fill-opacity="0.18" stroke="#ffc45c"/>
+      <text x="712" y="252" text-anchor="middle" fill="#f4f8f6" font-size="22" font-weight="700">Logs</text>
+      <text x="712" y="281" text-anchor="middle" fill="#c3dcd1" font-size="14">Replication</text>
+      <text x="712" y="299" text-anchor="middle" fill="#c3dcd1" font-size="14">sessions</text>
+    </g>
+    <!-- Card 2: Parser -->
+    <g>
+      <rect x="814" y="186" width="132" height="128" rx="20" fill="#0f1c19" fill-opacity="0.92" stroke="#4cd97b" stroke-opacity="0.74" stroke-width="2"/>
+      <rect x="830" y="200" width="100" height="7" rx="3" fill="#4cd97b"/>
+      <circle cx="850" cy="217" r="9" fill="#4cd97b" fill-opacity="0.18" stroke="#4cd97b"/>
+      <text x="880" y="252" text-anchor="middle" fill="#f4f8f6" font-size="22" font-weight="700">Parser</text>
+      <text x="880" y="281" text-anchor="middle" fill="#c3dcd1" font-size="14">Times, routes,</text>
+      <text x="880" y="299" text-anchor="middle" fill="#c3dcd1" font-size="14">proxies</text>
+    </g>
+    <!-- Card 3: CSV -->
+    <g>
+      <rect x="982" y="186" width="132" height="128" rx="20" fill="#0f1c19" fill-opacity="0.92" stroke="#4dcde0" stroke-opacity="0.74" stroke-width="2"/>
+      <rect x="998" y="200" width="100" height="7" rx="3" fill="#4dcde0"/>
+      <circle cx="1018" cy="217" r="9" fill="#4dcde0" fill-opacity="0.18" stroke="#4dcde0"/>
+      <text x="1048" y="248" text-anchor="middle" fill="#f4f8f6" font-size="22" font-weight="700">CSV</text>
+      <text x="1048" y="274" text-anchor="middle" fill="#c3dcd1" font-size="13">Excel · Grafana</text>
+      <text x="1048" y="291" text-anchor="middle" fill="#c3dcd1" font-size="13">Access · Power BI</text>
+      <text x="1048" y="308" text-anchor="middle" fill="#c3dcd1" font-size="13">+ more</text>
+    </g>
+    <g fill="none" stroke-linecap="round" stroke-width="5">
+      <line x1="778" y1="250" x2="804" y2="250" stroke="#ffc45c"/>
+      <polygon points="804,250 791,242 791,258" fill="#ffc45c" stroke="none"/>
+      <line x1="946" y1="250" x2="972" y2="250" stroke="#4cd97b"/>
+      <polygon points="972,250 959,242 959,258" fill="#4cd97b" stroke="none"/>
+    </g>
+    <text x="646" y="354" fill="#c3dcd1" font-size="15">Incremental runs skip known IDs and keep a cumulative</text>
+    <text x="646" y="372" fill="#c3dcd1" font-size="15">CSV ready for dashboards and trend analysis.</text>
+    <text x="646" y="444" fill="#c3dcd1" font-size="13" fill-opacity="0.7">PowerShell  ·  Windows Server  ·  Excel · Grafana  ·  GPL-3.0</text>
+  </g>
+</svg>

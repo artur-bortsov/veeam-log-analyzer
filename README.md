@@ -1,6 +1,6 @@
 # Veeam Replication Log Analyzer
 
-![Veeam Replication Log Analyzer — Veeam to Analytics](assets/project-thumbnail.svg)
+![Veeam Replication Log Analyzer](assets/banner.svg)
 
 A PowerShell script that incrementally parses **Veeam Backup & Replication** task log files
 and builds a cumulative CSV database of replication session metrics. The database can be
