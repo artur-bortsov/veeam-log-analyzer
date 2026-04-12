@@ -13,7 +13,7 @@
     sessions are appended to the CSV.
 
 .NOTES
-    Version : 1.2
+    Version : 1.2.0
     Created : 2021-10-13
     Updated : 2024-01-30
     Author  : Bortsov A.S.
@@ -21,6 +21,8 @@
 .LINK
     https://github.com/artur-bortsov/veeam-log-analyzer
 #>
+
+$script:Version = '1.2.0'
 
 # ---------------------------------------------------------------------------
 # Load configuration from config.psd1 located next to this script file.
